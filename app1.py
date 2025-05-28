@@ -232,12 +232,13 @@ def main():
     
     # Sidebar
     with st.sidebar:
-        st.markdown("### 🔧 Configuration")
+        st.markdown("### 🔧 Model  Configuration")
         
         # API Key Input
-        st.markdown('<div class="sidebar-info"><h4>🔑 API Configuration</h4></div>', unsafe_allow_html=True)
-        api_key = st.text_input("Enter your Groq API Key:", type="password", help="Get your API key from https://groq.com")
-        
+        # st.markdown('<div class="sidebar-info"><h4>🔑 API Configuration</h4></div>', unsafe_allow_html=True)
+        # api_key = st.text_input("Enter your Groq API Key:", type="password", help="Get your API key from https://groq.com")
+        api_key = st.API_KEY
+
         if api_key and not st.session_state.api_key_set:
             if st.button("🚀 Initialize AI Model"):
                 with st.spinner("Initializing AI model..."):
