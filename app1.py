@@ -277,7 +277,6 @@ def main():
         <div class="sidebar-info">
         <h4>📋 How to Use:</h4>
         <ol>
-        <li>Enter your Groq API key</li>
         <li>Upload a financial PDF report</li>
         <li>Ask questions about the report</li>
         <li>Get AI-powered insights!</li>
